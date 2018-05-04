@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="MainApp">
+<head>
+    <meta charset="UTF-8">
+    <title>App Main</title>
+    <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body >
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: #e3f2fd !important;">
+    <a class="navbar-brand" href="#">Ecommerce</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#!">Acueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!">Produits</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#!">Actualité</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div ng-controller="Chrone">
+  {{chrone  | date:'HH:mm:ss'}}
+</div>
+<div class="container-fluid" ng-view>
+
+</div>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular/angular-route.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="app/modules/app.js"></script>
+    <script src="app/directive/commentDir.js"></script>
+    <script src="app/model/Post.js"></script>
+    <script src="app/controller/PostCtrl.js"></script>
+    <script src="app/controller/CommentCtrl.js"></script>
+</body>
+</html>
